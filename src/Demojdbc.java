@@ -16,7 +16,7 @@ public class Demojdbc {
         String Uname="postgres";
         String pass="Asdf@1234";
 
-        Class.forName("org.postgresql.Driver");
+        Class.forName("org.postgresql.Driver"); //optional part form java 6 onwards. we can comment it out.
         Connection con=DriverManager.getConnection(url,Uname,pass);
 
         System.out.println("Connection Established");
